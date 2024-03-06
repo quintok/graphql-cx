@@ -20,8 +20,8 @@ jobs:
                 subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
             - name: Deploy
               run: |
-                az stack sub create\
-                --location australiaeast\
-                --name graphql-cx\
-                --template-file infra/subscription.bicep\
+                az stack sub create \
+                --location australiaeast \
+                --name graphql-cx \
+                --template-file infra/subscription.bicep \
                 --deny-settings-mode denyWriteAndDelete
